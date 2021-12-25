@@ -48,6 +48,25 @@ What did I use in my training:
 
 **2021** - started the JS/Frontend-development course at [RS School](https://rs.school/).
 
+## Sample code
+```
+function multiply(a, b){
+  return a * b
+}
+
+Sample Tests:
+const assert = require("chai").assert;
+
+describe("Multiply", () => {
+  it("fixed tests", () => {
+    assert.strictEqual(multiply(1,1), 1);
+    assert.strictEqual(multiply(2,1), 2);
+    assert.strictEqual(multiply(2,2), 4);
+    assert.strictEqual(multiply(3,5), 15);   
+  });
+});
+```
+
 ## Experience
 1. [Device - online gadget store](https://kinkandju.github.io/397961-device-25/)
 The most challenging HTML Academy project in the professional online course HTML and CSS, Level 1 (in 2019).
@@ -136,3 +155,6 @@ What I've learned:
 - test performance with Lighthouse;
 - support cross-browser, including IE11, and cross-platform (Android, IOS);
 - use the graphical online editor Figma.
+
+## English language
+My English level at the moment is A2 (Pre-Intermediate).
