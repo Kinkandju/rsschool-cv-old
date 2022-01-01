@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Kinkandju/rsschool-cv/issues"
   },
-  "homepage": "https://github.com/Kinkandju/rsschool-cv#readme"
+  "homepage": "https://github.com/Kinkandju/rsschool-cv#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
