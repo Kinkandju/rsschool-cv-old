@@ -6,7 +6,7 @@
 			<figcaption>Function the smallest divisor:</figcaption>
 			<pre>
 const smallestDivisor = (num) => {
-	if (num <= 0) {
+	if (num &lt;= 0) {
 		return NaN;
 	} else if (num === 1) {
 		return num;
@@ -28,7 +28,7 @@ const smallestDivisor = (num) => {
 const factorial = (num) => {
 	let result = 1;
 		
-	for (let counter = 1; counter <= num; counter ++) {
+	for (let counter = 1; counter &lt;= num; counter ++) {
 		result *= counter;
 	}
 	return result;
