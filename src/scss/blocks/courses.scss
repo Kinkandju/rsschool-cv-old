@@ -1,0 +1,62 @@
+.courses {
+	h2 {
+		margin: 0 0 20px 0;
+
+		font: normal bold 26px $font--Roboto-bold;
+
+		color: $grey;
+	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+	}
+}
+
+.courses__description {
+	color: $black;
+
+	span {
+		font: normal 18px $font--Roboto-regular;
+	}
+
+	p {
+		margin: 0 0 10px 0;
+
+		font: normal 300 18px $font--Roboto-light;
+		line-height: 30px;
+
+		color: $black;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	a {
+		border-bottom: 1px solid $black;
+
+		color: $black;
+
+		&:hover,
+		&:focus {
+			border-bottom: 1px solid $transparentgrey;
+
+			color: $transparentgrey;
+
+			transition: 0.5ms;
+		}
+	}
+
+	@media (max-width: $tablet-width) {
+		span {
+			font-size: 16px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 28px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+.skills {
+	h2 {
+		margin: 0 0 20px 0;
+
+		font: normal bold 26px $font--Roboto-bold;
+
+		color: $grey;
+	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+	}
+}
+
+.skills__group {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	p {
+		margin: 0 0 10px 0;
+
+		font: normal 18px $font--Roboto-regular;
+		line-height: 30px;
+
+		color: $black;
+	}
+
+	@media (max-width: $tablet-width) {
+		p {
+			font-size: 16px;
+			line-height: 28px;
+		}
+	}
+}
+
+.skills__item {
+	margin: 0 0 5px 0;
+
+	font: normal 300 18px $font--Roboto-light;
+
+	color: $black;
+
+	&::before {
+		margin: 0 5px 0 0;
+
+		content: '\2714';
+		font-size: 18px;
+	}
+
+	&:last-child {
+		margin: 0;
+	}
+
+	@media (max-width: $tablet-width) {
+		margin: 0 3px 0 0;
+
+		font-size: 16px;
+	}
+}

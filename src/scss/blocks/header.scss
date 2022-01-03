@@ -1,0 +1,44 @@
+.page-header {
+	margin: 0;
+	padding: 40px 0;
+
+	background-color: $grey;
+}
+
+.page-header__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+
+.page-header__item {
+	margin: 0 10px 0 0;
+
+	a {
+		font: normal normal 18px $font--Roboto-regular;
+		text-transform: uppercase;
+
+		color: $white;
+
+		&:hover,
+		&:focus {
+			border-bottom: 2px solid $white;
+
+			color: $white;
+
+			transition: 1ms;
+		}
+	}
+
+	&:last-child {
+		margin: 0;
+	}
+
+	@media (max-width: $tablet-width) {
+		margin: 0 10px 0 0;
+		
+		a {
+			font-size: 16px;
+		}
+	}
+}
