@@ -1,0 +1,36 @@
+.code {
+	h2 {
+		margin: 0 0 20px 0;
+
+		font: normal bold 26px $font--Roboto-bold;
+
+		color: $grey;
+	}
+}
+
+.code__examples-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	@media (max-width: $tablet-width) {
+		justify-content: space-between;
+	}
+}
+
+.code__example {
+	figcaption {
+		margin: 0 0 20px 0;
+
+		font: normal 20px $font--Roboto-regular;
+
+		color: $black;
+	}
+
+	pre {
+		font: normal 16px $font--Roboto-light;
+
+		color: $grey;
+	}
+}

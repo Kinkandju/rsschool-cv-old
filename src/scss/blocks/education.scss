@@ -1,0 +1,31 @@
+.education {
+	h2 {
+		margin: 0 0 20px 0;
+
+		font: normal bold 26px $font--Roboto-bold;
+
+		color: $grey;
+	}
+
+	p {
+		font: normal 300 18px $font--Roboto-light;
+		line-height: 30px;
+	
+		color: $black;
+	}
+
+	a {
+		border-bottom: 1px solid $black;
+
+		color: $black;
+
+		&:hover,
+		&:focus {
+			border-bottom: 1px solid $transparentgrey;
+
+			color: $transparentgrey;
+
+			transition: 0.5ms;
+		}
+	}
+}

@@ -2,41 +2,39 @@
 	<h2>Code</h2>
 
 	<div class="code__examples-group">
-		<div class="code__example">
-			<h3>Function the smallest divisor:</h3>
-
+		<figure class="code__example">
+			<figcaption>Function the smallest divisor:</figcaption>
 			<pre>
-				const smallestDivisor = (num) => {
-					if (num <= 0) {
-						return NaN;
-					} else if (num === 1) {
-						return num;
-					}
+const smallestDivisor = (num) => {
+	if (num <= 0) {
+		return NaN;
+	} else if (num === 1) {
+		return num;
+	}
 		
-					let y = 2;
+	let y = 2;
 		
-					while (num % y !== 0) {
-						y = y + 1;
-					}
-					return y;
-				}
+	while (num % y !== 0) {
+		y = y + 1;
+	}
+	return y;
+}
 			</pre>
-		</div>
+		</figure>
 
-		<div class="code__example">
-			<h3>Function factorial:</h3>
-
+		<figure class="code__example">
+			<figcaption>Function factorial:</figcaption>
 			<pre>
-				const factorial = (num) => {
-					let result = 1;
+const factorial = (num) => {
+	let result = 1;
 		
-					for (let counter = 1; counter <= num; counter ++) {
-						result *= counter;
-					}
-					return result;
-				}
+	for (let counter = 1; counter <= num; counter ++) {
+		result *= counter;
+	}
+	return result;
+}
 			</pre>
-		</div>
+		</figure>
 	</div>
 
 </section>

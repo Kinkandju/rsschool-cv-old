@@ -73,8 +73,8 @@ const parseCss = () => {
 				cascade: true
 			})
 		)
-		.pipe(dest(path.build.css))
 		.pipe(cleancss())
+		.pipe(dest(path.build.css))
 		.pipe(
 			rename({
 				extname: ".min.css"
@@ -142,7 +142,7 @@ const cleanFolder = (params) => {
 	return del(path.clean);
 }
 
-let build = gulp.series(cleanFolder, gulp.parallel(parseJs, parseCss, parseHtml, createImages, createSvg, svgSprite, parseFonts));
+let build = gulp.series(cleanFolder, gulp.parallel(parseHtml, parseCss, parseJs, createImages, createSvg, svgSprite, parseFonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.parseFonts = parseFonts;
