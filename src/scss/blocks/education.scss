@@ -28,4 +28,15 @@
 			transition: 0.5ms;
 		}
 	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 28px;
+		}
+	}
 }

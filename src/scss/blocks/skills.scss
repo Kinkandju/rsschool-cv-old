@@ -6,6 +6,12 @@
 
 		color: $grey;
 	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+	}
 }
 
 .skills__group {
@@ -20,6 +26,13 @@
 		line-height: 30px;
 
 		color: $black;
+	}
+
+	@media (max-width: $tablet-width) {
+		p {
+			font-size: 16px;
+			line-height: 28px;
+		}
 	}
 }
 
@@ -39,5 +52,11 @@
 
 	&:last-child {
 		margin: 0;
+	}
+
+	@media (max-width: $tablet-width) {
+		margin: 0 3px 0 0;
+
+		font-size: 16px;
 	}
 }

@@ -19,3 +19,54 @@
 
 	color: $white;
 }
+
+.page-footer__github,
+.page-footer__logo {
+	position: relative;
+}
+
+.page-footer__tooltip{
+	position: absolute;
+	top: 10px;
+	left: -160px;
+
+	width: 105%;
+	height: 44px;
+
+	font: normal bold 16px $font--Roboto-bold;
+	line-height: 42px;
+	text-align: center;
+
+	background: $white;
+	color: $grey;
+	
+	border-radius: 10px;
+	opacity: 0;
+	transition: all 0.5s ease;
+  }
+
+  .page-footer__tooltip.tooltip--centre {
+	width: 290%;
+  }
+
+  .page-footer__tooltip:before {
+	position: absolute;
+	top: 0;
+	right: -10px;
+
+	content: "";
+
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid $white;
+	border-bottom: 10px solid transparent;
+  }
+
+  .page-footer__github,
+  .page-footer__logo {
+	  &:hover {
+		.page-footer__tooltip {
+			opacity: 1;
+		}
+	  }
+  }

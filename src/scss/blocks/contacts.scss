@@ -10,6 +10,12 @@
 
 		color: $grey;
 	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+	}
 }
 
 .contacts__item {
@@ -40,6 +46,14 @@
 			color: $transparentgrey;
 
 			transition: 0.5ms;
+		}
+	}
+
+	@media (max-width: $tablet-width) {
+		font-size: 16px;
+
+		span {
+			font-size: 16px;
 		}
 	}
 }

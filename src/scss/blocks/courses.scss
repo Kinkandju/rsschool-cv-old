@@ -6,6 +6,12 @@
 
 		color: $grey;
 	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+	}
 }
 
 .courses__description {
@@ -40,6 +46,17 @@
 			color: $transparentgrey;
 
 			transition: 0.5ms;
+		}
+	}
+
+	@media (max-width: $tablet-width) {
+		span {
+			font-size: 16px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 28px;
 		}
 	}
 }

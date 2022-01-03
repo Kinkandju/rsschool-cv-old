@@ -9,12 +9,10 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
-
-	padding: 0 20px;
 }
 
 .page-header__item {
-	margin: 0 15px 0 0;
+	margin: 0 10px 0 0;
 
 	a {
 		font: normal normal 18px $font--Roboto-regular;
@@ -34,5 +32,13 @@
 
 	&:last-child {
 		margin: 0;
+	}
+
+	@media (max-width: $tablet-width) {
+		margin: 0 10px 0 0;
+		
+		a {
+			font-size: 16px;
+		}
 	}
 }

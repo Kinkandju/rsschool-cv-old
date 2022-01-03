@@ -6,6 +6,12 @@
 
 		color: $grey;
 	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+	}
 }
 
 .summary__container {
@@ -19,10 +25,6 @@
 		max-width: 150px;
 
 		border-radius: 3%;
-
-		@media (max-width: $tablet-width) {
-			max-width: 30%;
-		}
 	}
 }
 
@@ -34,5 +36,12 @@
 		line-height: 30px;
 
 		color: $black;
+	}
+
+	@media (max-width: $tablet-width) {
+		p {
+			font-size: 16px;
+			line-height: 28px;
+		}
 	}
 }
