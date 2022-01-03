@@ -1,0 +1,27 @@
+.languages {
+	h2 {
+		margin: 0 0 20px 0;
+
+		font: normal bold 26px $font--Roboto-bold;
+
+		color: $grey;
+	}
+
+	p {
+		font: normal 300 18px $font--Roboto-light;
+		line-height: 30px;
+		
+		color: $black;
+	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 28px;
+		}
+	}
+}

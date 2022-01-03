@@ -1,0 +1,47 @@
+.summary {
+	h2 {
+		margin: 0 0 20px 0;
+
+		font: normal bold 26px $font--Roboto-bold;
+
+		color: $grey;
+	}
+
+	@media (max-width: $tablet-width) {
+		h2 {
+			font-size: 22px;
+		}
+	}
+}
+
+.summary__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-shrink: 1;
+	align-items: center;
+
+	img {
+		max-width: 150px;
+
+		border-radius: 3%;
+	}
+}
+
+.summary__description {
+	margin: 0 20px 0 0;
+
+	p {
+		font: normal 300 18px $font--Roboto-light;
+		line-height: 30px;
+
+		color: $black;
+	}
+
+	@media (max-width: $tablet-width) {
+		p {
+			font-size: 16px;
+			line-height: 28px;
+		}
+	}
+}
