@@ -73,8 +73,8 @@ const parseCss = () => {
 				cascade: true
 			})
 		)
-		.pipe(cleancss())
 		.pipe(dest(path.build.css))
+		.pipe(cleancss())
 		.pipe(
 			rename({
 				extname: ".min.css"
